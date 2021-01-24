@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+/*
+nav ul li:hover{
+    transition: 500ms;
+    background-color: #fafafa2c;
+    border-radius: 0.7rem;   
+}*/
+
+
+/*
+nav ul li{
+    position: relative;
+    padding: 0rem 1rem;
+}*/
+
+.Typewriter__wrapper{
+    font-family: 'Anonymous Pro',monospace;
+}
