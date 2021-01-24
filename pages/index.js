@@ -9,6 +9,11 @@ export default function Index (){
     <>
     <Head>
       <title>Mattia Ferrari | Portfolio</title>
+      <meta charSet="UTF-8" />
+      <meta name="description" content="This is Mattia Ferrari's Portfolio" />
+      <meta name="keywords" content="portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN" />
+      <meta name="author" content="Mattia Ferrari" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
     <div className='dark:bg-gray-900'>
       <main className="grid grid-cols-1">
