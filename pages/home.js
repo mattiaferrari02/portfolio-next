@@ -10,15 +10,16 @@ export default function Home() {
                 <meta name="keywords" content="portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN" />
                 <meta name="author" content="Mattia Ferrari" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="icon" href="bus.ico" type="image/x-icon" />
             </Head>
-            <header className="shadow-md dark:bg-gray-800 ">
+            
                 <Navbar />
-            </header>
-            <div className='md:flex dark:bg-coolGray-900 bg-white rounded-lg p-24 justify-center'>
+            
+            <main className='md:flex dark:bg-gray-900 bg-white p-24 justify-center'>
                 <div className='text-center md:text-left'>
-
+                        asdsgd
                 </div>
-            </div>
+            </main>
         </>
     );
 }
