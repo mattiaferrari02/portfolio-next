@@ -1,7 +1,6 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
     purge: [],
-    darkMode: 'media',
     theme: {
         colors: {
             // Build your palette here
