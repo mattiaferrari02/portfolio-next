@@ -9,9 +9,9 @@ export default function Navbar(){
                 </div>
                 <div className="text-lg align-bottom hidden lg:flex justify-end p-4">
                     <ul className="flex  space-x-4">
-                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="#about"><span role="img" aria-label="coffee">☕</span> About Me</a></li>
-                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="#contacts"><span role="img" aria-label="cartellon">🚧</span> Activities & Projects</a></li>
-                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="#footerx"><span role="img" aria-label="book">📕</span> Contacts</a></li>
+                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="/home#aboutme"><span role="img" aria-label="coffee">☕</span> About Me</a></li>
+                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="#contacts"><span role="img" aria-label="cartellon">🚧</span> Attività e Progetti</a></li>
+                        <li><a className="rounded-full py-3 px-3 hover:bg-red-400 " href="#footerx"><span role="img" aria-label="book">📕</span> Contattami</a></li>
                     </ul>
                 </div>
             </nav>

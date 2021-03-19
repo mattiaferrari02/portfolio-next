@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { FaInstagram, FaGithub, FaEnvelope, FaPhoneSquareAlt } from "react-icons/fa";
-import { SiNextDotJs, SiReact, SiFirebase, SiGmail } from "react-icons/si";
+import { SiNextDotJs, SiReact, SiFirebase, SiGmail, SiTailwindcss } from "react-icons/si";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ToastProvider, useToasts } from "react-toast-notifications";
 
@@ -25,7 +25,8 @@ const Toaster = () =>{
                     <p className="text-2xl" >Informazioni</p>
                     <p className="break-words text-base" >
                         Ho creato questo sito per parlare di ciò che ho fatto a scuola, andando dai progetti fino al PCTO sin dall'inizio. <br />
-                        Alcuni dei progetti probabilmente non sono belli o ben fatti ma questo è il mio punto di partenza.
+                        Alcuni dei progetti probabilmente non sono belli o ben fatti ma questo è il mio punto di partenza.<br />
+                        Questo Portfolio è stato creato utilizzando la maggior parte delle mie conoscenze da web developer essendo un vero e proprio sito full-stack
                     </p>
                 </div>
                 <div>
@@ -119,10 +120,11 @@ const Toaster = () =>{
                             </div>
                 </div>
                 <div>
-                    <div className="text-2xl gap-1 flex justify-center pb-1">
+                    <div className="text-2xl gap-3 flex justify-center pb-1">
                                     <a href="https://nextjs.org/"><SiNextDotJs /></a> 
                                     <a href="https://it.reactjs.org/"><SiReact /> </a>
                                     <a href="https://firebase.google.com/"><SiFirebase /></a>
+                                    <a href="https://tailwindcss.com/"><SiTailwindcss /></a>
                     </div>
                 </div>
                 <div>

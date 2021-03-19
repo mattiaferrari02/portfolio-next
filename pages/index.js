@@ -1,20 +1,18 @@
 import Logo from '../components/Logo'
 import Link from 'next/link'
-import Head from 'next/head'
+import Head from '../components/Head'
 import Typewriter from 'typewriter-effect'
 export default function Index (){
   
   return(
     <>
-    <Head>
-      <title>Mattia Ferrari | Portfolio</title>
-      <meta charSet="UTF-8" />
-      <meta name="description" content="This is Mattia Ferrari's Portfolio" />
-      <meta name="keywords" content="portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN" />
-      <meta name="author" content="Mattia Ferrari" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="dragun.ico" type="image/x-icon" />
-    </Head>
+      <Head
+        keywords={
+          "portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN"
+        }
+        description="This is my portfolio"
+        title="Mattia Ferrari | PortFolio"
+      />
     <div className='bg-gray-900'>
       <main className="landing grid grid-cols-1">
         <div className="mx-auto w-10/12 md:w-2/4 lg:w-5/12 ">
@@ -25,12 +23,14 @@ export default function Index (){
           <Typewriter
             options={{
               strings: ['Ciao, sono Mattia.',
-                'Questo è iil mio Portfolio',
+                'Questo è il mio Portfolio',
                 'Spero ti piaccia.',
                 'Clicca Avanti!'
               ],
               autoStart: true,
               loop: true,
+              cursor: "_",
+              delay: 100
             }}
           />
         </div>
