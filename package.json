@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "build:style": "tailwind build ./styles/index.css -o ./styles/tailwind.css",
-    "start": "npm run build:style && next start"
+    "start": "npm run build:style && next start",
+    "build:all": "npm run build:style && next build"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
