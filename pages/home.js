@@ -19,10 +19,10 @@ export default function Home() {
 
         <Navbar />
           <main>
-        <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 mt-4 flex-grow">
+        <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 mt-20 flex-grow">
           <article id="aboutme" className=" w-full ">
             
-            <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-10">
+            <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 my-4">
                   <h2><span role="img" aria-label="coffee">☕</span> About Me</h2>
                   <time dateTime="2021-03-18" ></time>
                 </header>
@@ -56,7 +56,7 @@ export default function Home() {
                 </div>
 
               <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl  md:row-span-2">
-                    <img className="object-cover object-center rounded-xl h-full w-full" src="faccia.png" />
+                    <img className="object-cover object-center rounded-xl w-full" src="images/faccia.png" />
                 </div>
 
               <Link href="/"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
@@ -111,16 +111,22 @@ export default function Home() {
         </section>
         <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
           <article id="skills" className="w-full">
-            <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-10">
+            <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-4">
               <h2><span role="img" aria-label="coffee">🚊</span> Cosa so fare</h2>
               <time dateTime="2021-03-18" ></time>
             </header>
             <main>
-                <Section title="Programming and Markup Languages" skills={skills.languages} className="mt-10" />
+                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                  <Section title="Programmazione e Markup" skills={skills.languages} />
+                </div>
 
-                <Section title="Libraries and Frameworks" skills={skills.frameworks} className="mt-6" />
+                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                  <Section title="Librerie Frameworks" skills={skills.frameworks}  />
+                </div>
 
-                <Section title="Tools and Services" skills={skills.tools} className="mt-6" />
+                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <Section title="Strumenti e Servizi" skills={skills.tools} />
+                </div>
             </main>
           </article>
         </section>

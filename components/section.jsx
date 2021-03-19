@@ -5,9 +5,9 @@ import Skill from "../components/skill";
 
 const Section = (props) => (
   <div className={props.className}>
-    <h1 className="text-2xl font-semibold">⭐&nbsp;{props.title}:</h1>
+    <h1 className="text-2xl ">⭐&nbsp;{props.title}:</h1>
 
-    <div className="mt-4">
+    <div className=" text-gray-900">
       {props.skills.map((section) => (
         <Skill section={section} key={props.skills.indexOf(section)} />
       ))}

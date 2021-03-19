@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Navbar(){
     return(
-        <header className="shadow-md bg-red-600 ">
+        <header className="fixed w-full z-50 shadow-md bg-red-600 ">
 
             <nav className=" z-50 text-gray-200 container mx-auto  select-none flex items-stretch w-full justify-center lg:justify-between">
                 <div className="text-3xl flex p-4 justify-center lg:justify-start">

@@ -9,7 +9,7 @@ const Skill = ({ section }) => {
       {section.map((element) => (
         <div className="inline-block mb-3" key={element.name}>
           <span
-            className="rounded-full opacity-75 hover:opacity-100 active:opacity-100 px-5 py-1 text-sm font-bold mr-2 cursor-pointer"
+            className="rounded-full px-5 py-1 text-sm font-bold mr-2 cursor-pointer"
             style={{ backgroundColor: element.color }}
             onClick={(event) => setElement(element)}
           >
@@ -18,9 +18,9 @@ const Skill = ({ section }) => {
         </div>
       ))}
 
-      <div className="shadow w-full bg-gray-200 mt-4">
+      <div className="shadow w-full bg-gray-200 mt-4 rounded-full">
         <div
-          className="opacity-75 text-xs leading-none py-1 text-center text-white"
+          className="text-xs leading-none py-1 text-center text-white rounded-full"
           style={{ width: element.skill, backgroundColor: element.color }}
         >
           {element.skill}

@@ -4,6 +4,7 @@ export default function Heading({description, keywords, title}){
     return (
         <Head>
             <title>{title}</title>
+            
             <meta charSet="UTF-8" />
             <meta
                 name="description"
@@ -18,7 +19,7 @@ export default function Heading({description, keywords, title}){
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <link rel="icon" href="dragun.ico" type="image/x-icon" />
+            <link rel="icon" href="images/dragun.ico" type="image/x-icon" />
         </Head>
     );
 }
