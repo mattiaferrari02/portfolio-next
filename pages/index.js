@@ -15,7 +15,7 @@ export default function Index (){
       />
     <div className='bg-gray-900'>
       <main className="landing grid grid-cols-1">
-        <div className="mx-auto w-10/12 md:w-2/4 lg:w-5/12 ">
+          <div className="ml-4 sm:mx-auto  w-10/12 md:w-2/4 lg:w-5/12 ">
           <Logo />
         </div>
         

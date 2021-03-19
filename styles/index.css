@@ -213,3 +213,8 @@ background-size: cover;
     transition-duration: .3s;
     transform: translateY(-3px);
 }
+
+
+.pointer{
+    cursor: pointer;
+}
