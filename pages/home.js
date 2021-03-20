@@ -69,7 +69,7 @@ export default function Home() {
                     <img className="object-cover object-center rounded-xl h-full w-full" alt="faccione" src="images/faccia.png" />
                 </div>
 
-              <Link href="/"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
+              <Link href="/progetti"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
                     
                 <span role="img" aria-label="workinprogress">🚧</span>   Vai ai Progetti <span role="img" aria-label="workinprogress">➡</span>
                     <div className="block text-lg">
