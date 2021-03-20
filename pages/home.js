@@ -66,7 +66,7 @@ export default function Home() {
                 </div>
 
               <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl  md:row-span-2">
-                    <img className="object-cover object-center rounded-xl h-full w-full" src="images/faccia.png" />
+                    <img className="object-cover object-center rounded-xl h-full w-full" alt="faccione" src="images/faccia.png" />
                 </div>
 
               <Link href="/"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
