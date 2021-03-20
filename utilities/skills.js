@@ -21,7 +21,7 @@ const languages = [
             skill: "65%"
         },
         {
-            name: "Typescript",
+            name: "TypeScript",
             color: "#0076C6",
             skill: "90%"
         },
@@ -43,7 +43,7 @@ const languages = [
             skill: "80%"
         },
         {
-            name: "Javascript",
+            name: "JavaScript",
             color: "#EFD71D",
             skill: "90%"
         }
@@ -75,12 +75,12 @@ const frameworks = [
     ],
     [
         {
-            name: "JQuery",
+            name: "jQuery",
             color: "#0169B0",
             skill: "80%"
         },
         {
-            name: "React",
+            name: "React.js",
             color: "#5FD3F4",
             skill: "85%"
         },
@@ -112,7 +112,7 @@ const frameworks = [
             skill: "75%"
         },
         {
-            name: "MaterialUI",
+            name: "Material-UI",
             color: "#0169B0",
             skill: "50%"
         },

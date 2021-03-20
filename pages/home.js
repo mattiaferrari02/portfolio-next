@@ -44,7 +44,7 @@ export default function Home() {
                     Formazione: <span className="text-xl"><span role="img" aria-label="notebook">📒</span>  Blaise Pascal</span>   <br/>
                     Specializzazione: <span className="text-xl"><span role="img" aria-label="coding-man">👨‍💻</span>  Full stack web-dev </span>   <br/>
                     Età: <span className="text-xl"><span role="img" aria-label="compleanno">🎂</span>  {age} </span> <br/>
-                    Hobby: <span className="text-xl"><span role="img" aria-label="computer">💻</span>  Coding e serie TV </span><br/>
+                    Hobby: <span className="text-xl"><span role="img" aria-label="computer">📺</span>  Coding e serie TV </span><br/>
 
                 </div>
 

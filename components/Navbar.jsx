@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 export default function Navbar(){
     return(
         <header className="fixed w-full z-50 shadow-md bg-red-600 ">
@@ -15,10 +15,10 @@ export default function Navbar(){
                             <Link href="/home#aboutme"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 " ><span role="img" aria-label="coffee">☕</span> About Me</span></Link>
                         </li>
                         <li>
-                            <Link href="#contacts"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 " ><span role="img" aria-label="cartellon">🚧</span> Attività e Progetti</span></Link>
+                            <Link href="/progetti"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 " ><span role="img" aria-label="cartellon">🚧</span> Attività e Progetti</span></Link>
                         </li>
                         <li>
-                            <Link href="#footerx"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 "><span role="img" aria-label="book">📕</span> Contattami</span></Link>
+                            <Link href="#footer"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 "><span role="img" aria-label="book">📕</span> Contattami</span></Link>
                         </li>
                     </ul>
                 </div>

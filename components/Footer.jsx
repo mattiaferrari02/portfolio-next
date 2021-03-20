@@ -18,7 +18,7 @@ export default function Footer(){
 const Toaster = () =>{
     const { addToast } = useToasts();
     return (
-    <footer>
+    <footer id="footer">
         <div className="bg-gray-800 text-gray-300 pt-10 px-8 py-4">
             <div className="grid grid-flow-row  grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
                 <div>
