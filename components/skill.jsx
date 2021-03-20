@@ -18,7 +18,7 @@ const Skill = ({ section }) => {
         </div>
       ))}
 
-      <div className="shadow w-full bg-gray-200 mt-4 rounded-full">
+      <div className="shadow w-full bg-gray-200 mt-4 bg-opacity-75 rounded-full">
         <div
           className="text-xs leading-none py-1 text-center text-white rounded-full"
           style={{ width: element.skill, backgroundColor: element.color }}

@@ -6,6 +6,16 @@ import * as skills from "../utilities/skills";
 import Section from "../components/section";
 
 export default function Home() {
+    const birthday = new Date('2002-06-22');
+
+    const calculateAge = (birthday) => {
+      let difference = Date.now() - birthday.getTime();
+      let date = new Date(difference);
+      return Math.abs(date.getUTCFullYear() - 1970);
+    };
+
+    const age = calculateAge(birthday);
+
     //dummy data
     return (
       <div className="page flex flex-col min-h-screen">
@@ -33,7 +43,7 @@ export default function Home() {
                     Nome: <span className="text-xl"><span role="img" aria-label="Man">👨‍💼</span>  Mattia Ferrari </span> <br />
                     Formazione: <span className="text-xl"><span role="img" aria-label="notebook">📒</span>  Blaise Pascal</span>   <br/>
                     Specializzazione: <span className="text-xl"><span role="img" aria-label="coding-man">👨‍💻</span>  Full stack web-dev </span>   <br/>
-                    Età: <span className="text-xl"><span role="img" aria-label="compleanno">🎂</span>  18 </span> <br/>
+                    Età: <span className="text-xl"><span role="img" aria-label="compleanno">🎂</span>  {age} </span> <br/>
                     Hobby: <span className="text-xl"><span role="img" aria-label="computer">💻</span>  Coding e serie TV </span><br/>
 
                 </div>
@@ -43,8 +53,8 @@ export default function Home() {
                       <span role="img" aria-label="computer" >🌃</span>  Eccomi!
                     </div>
                     <p className="overflow-hidden overflow-ellipsis"> Hey! Sono Mattia Ferrari, questo è il mio Portfolio.
-                    Ho 18 anni e vivo a Reggio Emilia, sono all'ultimo anno delle superiori e frequento l'indirizzo informatico
-                    all'Istituto tecnico Blaise Pascal. <br />
+                  Ho 18 anni e vivo a Reggio Emilia, sono all'ultimo anno delle superiori e frequento l'indirizzo informatico
+                    all'<Link href="https://pascal.edu.it"><span className="pointer text-red-500 hover:text-red-600">Istituto tecnico Blaise Pascal</span></Link>. <br />
                     <span>
                     Piani per il futuro? Fare l'università e trovare un lavoro nel mio campo di interesse. <br />
                     In questo Portfolio sono raccolte tutte le mie esperienze
@@ -56,7 +66,7 @@ export default function Home() {
                 </div>
 
               <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl  md:row-span-2">
-                    <img className="object-cover object-center rounded-xl w-full" src="images/faccia.png" />
+                    <img className="object-cover object-center rounded-xl h-full w-full" src="images/faccia.png" />
                 </div>
 
               <Link href="/"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
@@ -116,15 +126,15 @@ export default function Home() {
               <time dateTime="2021-03-18" ></time>
             </header>
             <main>
-                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
                   <Section title="Programmazione e Markup" skills={skills.languages} />
                 </div>
 
-                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                   <Section title="Librerie Frameworks" skills={skills.frameworks}  />
                 </div>
 
-                <div className="card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                 <Section title="Strumenti e Servizi" skills={skills.tools} />
                 </div>
             </main>

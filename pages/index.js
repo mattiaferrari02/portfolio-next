@@ -10,7 +10,7 @@ export default function Index (){
         keywords={
           "portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN"
         }
-        description="Ciao! Sono Mattia Ferrari e questo è il mio Portfolio in cui parlo delle mie esperienze scolastiche e dei miei progetti"
+        description="Ciao! Sono Mattia Ferrari, sono uno sviluppatore web full stack e questo è il mio Portfolio in cui parlo delle mie esperienze scolastiche e dei miei progetti"
         title="Mattia Ferrari | PortFolio"
       />
     <div className='bg-gray-900'>
