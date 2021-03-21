@@ -11,7 +11,7 @@ export default function Index (){
           "portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN"
         }
         description="Ciao! Sono Mattia Ferrari, sono uno sviluppatore web full stack e questo è il mio Portfolio in cui parlo delle mie esperienze scolastiche e dei miei progetti"
-        title="Mattia Ferrari | PortFolio"
+        title="Mattia Ferrari | Portfolio"
       />
     <div className='bg-gray-900'>
       <main className="landing grid grid-cols-1">

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { FaInstagram, FaGithub, FaEnvelope, FaPhoneSquareAlt } from "react-icons/fa";
-import { SiNextDotJs, SiReact, SiFirebase, SiGmail, SiTailwindcss } from "react-icons/si";
+import { SiNextDotJs, SiReact, SiNetlify, SiGmail, SiTailwindcss, SiMongodb } from "react-icons/si";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ToastProvider, useToasts } from "react-toast-notifications";
 
@@ -115,16 +115,17 @@ const Toaster = () =>{
                 <div>
                     <div className="text-lg flex justify-center md:justify-start">
                                 <a href="/" className="pl-1">
-                                    PortFolio di Mattia Ferrari
+                                    Portfolio di Mattia Ferrari
                                 </a>
                             </div>
                 </div>
                 <div>
                     <div className="text-2xl gap-3 flex justify-center pb-1">
-                                    <a href="https://nextjs.org/"><SiNextDotJs /></a> 
+                                    <a href="https://www.mongodb.com/cloud"><SiMongodb /></a>
                                     <a href="https://it.reactjs.org/"><SiReact /> </a>
-                                    <a href="https://firebase.google.com/"><SiFirebase /></a>
+                                    <a href="https://nextjs.org/"><SiNextDotJs /></a> 
                                     <a href="https://tailwindcss.com/"><SiTailwindcss /></a>
+                                    <a href="https://www.netlify.com/"><SiNetlify /></a>
                     </div>
                 </div>
                 <div>

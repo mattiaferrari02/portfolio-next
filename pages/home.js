@@ -24,7 +24,7 @@ export default function Home() {
             "portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN"
           }
           description="mattia ferrari portfolio home page"
-          title="Mattia ferrari | Home Page"
+          title="Mattia Ferrari | Homepage"
         />
 
         <Navbar />

@@ -4,9 +4,8 @@ import Navbar from '../../components/Navbar';
 import Link from 'next/link';
 import * as skills from "../../utilities/skills";
 import Section from "../../components/section";
+import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
-
-
 export default function Home() {
 
     //dummy data
@@ -17,39 +16,51 @@ export default function Home() {
                     "portfolio, mattia ferrari, mattia, ferrari, web-dev, next.js, MERN"
                 }
                 description="mattia ferrari portfolio home page"
-                title="Mattia ferrari | Home Page"
+                title="Mattia Ferrari | Progetti"
             />
 
             <Navbar />
-            <main className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 mt-20 flex-grow">
-                <article id="aboutme" className=" w-full ">
-
-                    <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 my-4">
-                        <h2><span role="img" aria-label="workinprogress">🚧</span> I miei Progetti</h2>
+            <main className="text-gray-200 md:flex px-2 mt-20 flex-grow">
+                <article className=" w-full ">
+                    <header className="text-gray-300 mx-2 md:mx-20 text-3xl border-b-2 border-gray-300 my-4">
+                        <h2 className=""><span role="img" aria-label="workinprogress">🚧</span> I miei Progetti</h2>
                         <time dateTime="2021-03-18" ></time>
                     </header>
-                    <main className="grid  grid-col-1 grid-rows-9   sm:grid-cols-2 sm:grid-rows-3   lg:grid-cols-2 lg:grid-rows-3  xl:grid-cols-3  xl:grid-rows-3 grid-flow-row gap-3 mb-10">
-
+                    <main className="mx-2 md:mx-20 grid gap-y-6 grid-col-1 grid-flow-row  lg:grid-cols-2 xl:grid-cols-3  md:gap-16 mb-10">
                         
-
-
-
-                        <div className="card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
-                            <div>
-                                <span role="img" aria-label="computer">💻</span>  Software developer
-                    </div>
-                            <div className="block text-lg">
-                                <p>Grazie alla scuola ho imparato a creare software nativi per dispositivi desktop, utilizzando per esempio C++ o Java. <br />
-                        Personalmente invece ho imparato ad utilizzare Python e Flutter.
-                      </p>
-                            </div>
-                        </div>
-
+                        {
+                            cards.map(o => <Card data={o} />)
+                        }
+                    
                     </main>
                 </article>
-                
             </main>
             <Footer />
+        </div>
+    );
+}
+
+
+
+
+const Card = ({data: {image, name, cardDesc, anno}}) => {
+    
+    return (
+        <div key={name} className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
+            <div>
+                <img className="object-cover " style={{ width: "500px", height: "280px" }} alt="progetto" src={image} />
+            </div>
+            <div className="p-7 block text-lg">
+                <div className="text-2xl mb-2">
+                    {name}
+                </div>
+                <p>
+                    {cardDesc}
+                </p>
+                <div className="mt-4">
+                    <span className="rounded-lg bg-green-400 text-gray-800 p-2" >{anno}</span>
+                </div>
+            </div>
         </div>
     );
 }
