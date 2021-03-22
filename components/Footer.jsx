@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { FaInstagram, FaGithub, FaEnvelope, FaPhoneSquareAlt } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaEnvelope, FaPhoneSquareAlt, FaLinkedin } from "react-icons/fa";
 import { SiNextDotJs, SiReact, SiNetlify, SiGmail, SiTailwindcss, SiMongodb } from "react-icons/si";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ToastProvider, useToasts } from "react-toast-notifications";
@@ -31,7 +31,7 @@ const Toaster = () =>{
                 </div>
                 <div>
                     <p className="text-2xl" >Referenze</p>
-                        <ul className="text-base ">
+                        <ul className="text-base pointer">
                             <li className="mb-1">
                                 <a href="https://github.com/IlSassone"><div className="inline-block align-bottom">
                                         <FaGithub size="28px"/>
@@ -46,6 +46,14 @@ const Toaster = () =>{
                                     </div> 
                                     <div className="pl-1 inline-block align-baseline	">
                                         Instagram
+                                    </div></a>
+                            </li>
+                            <li className="mb-1">
+                                <a href="https://www.linkedin.com/in/mattia-ferrari-70105620a/"><div className="inline-block align-bottom">
+                                        <FaLinkedin size="28px"/>
+                                    </div> 
+                                    <div className="pl-1 inline-block align-baseline	">
+                                        Linkedin
                                     </div></a>
                             </li>
                             <li className="mb-1">
@@ -120,7 +128,7 @@ const Toaster = () =>{
                             </div>
                 </div>
                 <div>
-                    <div className="text-2xl gap-3 flex justify-center pb-1">
+                    <div className="pointer text-2xl gap-3 flex justify-center pb-1">
                                     <a href="https://www.mongodb.com/cloud"><SiMongodb /></a>
                                     <a href="https://it.reactjs.org/"><SiReact /> </a>
                                     <a href="https://nextjs.org/"><SiNextDotJs /></a> 

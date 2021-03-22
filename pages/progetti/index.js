@@ -6,6 +6,8 @@ import * as skills from "../../utilities/skills";
 import Section from "../../components/section";
 import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
+import { VscGithub} from "react-icons/vsc"
+import { HiOutlineGlobeAlt} from "react-icons/hi"
 export default function Home() {
 
     //dummy data
@@ -29,7 +31,7 @@ export default function Home() {
                     <main className="mx-2 md:mx-20 grid gap-y-6 grid-col-1 grid-flow-row  lg:grid-cols-2 xl:grid-cols-3  md:gap-16 mb-10">
                         
                         {
-                            cards.map(o => <Card data={o} />)
+                            cards.map((o, i) => <Card data={o} key={i}/>)
                         }
                     
                     </main>
@@ -43,12 +45,18 @@ export default function Home() {
 
 
 
-const Card = ({data: {image, name, cardDesc, anno}}) => {
-    
+const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAzienda}}) => {
+    console.log(github);
     return (
-        <div key={name} className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
-            <div>
+        <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
+            <div className="relative">
                 <img className="object-cover " style={{ width: "500px", height: "280px" }} alt="progetto" src={image} />
+                {github ? <Link  href={github} ><a target="blank"><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">
+                    <VscGithub size={28} />
+                </div></a></Link>: ""}
+                {linkAzienda ? <Link href={linkAzienda} ><a target="blank"><div className="pointer absolute bottom-2 right-2 shadow-2xl hover:text-red-500 ">
+                    <HiOutlineGlobeAlt size={28} />
+                </div></a></Link> : ""}
             </div>
             <div className="p-7 block text-lg">
                 <div className="text-2xl mb-2">
@@ -58,7 +66,7 @@ const Card = ({data: {image, name, cardDesc, anno}}) => {
                     {cardDesc}
                 </p>
                 <div className="mt-4">
-                    <span className="rounded-lg bg-green-400 text-gray-800 p-2" >{anno}</span>
+                    <span className="rounded-lg text-gray-800 p-2" style={{backgroundColor: pillColor}}>{anno}</span>
                 </div>
             </div>
         </div>

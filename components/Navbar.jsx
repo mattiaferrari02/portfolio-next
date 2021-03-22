@@ -57,6 +57,7 @@ export default function Navbar(){
                                 <a href="#sex" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2019/2020</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">2020/2021</a>
+                                <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">Orientamento</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">Personali</a>
                                 </div>
                             </div>
