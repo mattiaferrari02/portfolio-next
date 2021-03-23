@@ -33,7 +33,7 @@ const Toaster = () =>{
                     <p className="text-2xl" >Referenze</p>
                         <ul className="text-base pointer">
                             <li className="mb-1">
-                                <a href="https://github.com/IlSassone"><div className="inline-block align-bottom">
+                                <a href="https://github.com/IlSassone" target="blank"><div className="inline-block align-bottom">
                                         <FaGithub size="28px"/>
                                     </div> 
                                     <div className="pl-1 inline-block align-baseline	">
@@ -41,7 +41,7 @@ const Toaster = () =>{
                                     </div></a>
                             </li>
                             <li className="mb-1">
-                                <a href="https://www.instagram.com/matty_105/"><div className="inline-block align-bottom">
+                                <a href="https://www.instagram.com/matty_105/" target="blank"><div className="inline-block align-bottom">
                                         <FaInstagram size="28px"/>
                                     </div> 
                                     <div className="pl-1 inline-block align-baseline	">
@@ -49,7 +49,7 @@ const Toaster = () =>{
                                     </div></a>
                             </li>
                             <li className="mb-1">
-                                <a href="https://www.linkedin.com/in/mattia-ferrari-70105620a/"><div className="inline-block align-bottom">
+                                <a href="https://www.linkedin.com/in/mattia-ferrari-70105620a/" target="blank"><div className="inline-block align-bottom">
                                         <FaLinkedin size="28px"/>
                                     </div> 
                                     <div className="pl-1 inline-block align-baseline	">

@@ -8,9 +8,9 @@ import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
 import { VscGithub} from "react-icons/vsc"
 import { HiOutlineGlobeAlt} from "react-icons/hi"
-export default function Home() {
+import Image from 'next/image'
 
-    //dummy data
+export default function Home() {
     return (
         <div className="page flex flex-col min-h-screen">
             <Head
@@ -31,7 +31,10 @@ export default function Home() {
                     <main className="mx-2 md:mx-20 grid gap-y-6 grid-col-1 grid-flow-row  lg:grid-cols-2 xl:grid-cols-3  md:gap-16 mb-10">
                         
                         {
-                            cards.map((o, i) => <Card data={o} key={i}/>)
+                            cards.map((o, i) => {
+                                if (o.hasPage) return <HasLink link={`./progetti/${o.id}`}  key={i}> <Card data={o} key={i} /></HasLink>
+                                else return <Card data={o} key={i} />
+                            })
                         }
                     
                     </main>
@@ -50,7 +53,7 @@ const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAziend
     return (
         <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
             <div className="relative">
-                <img className="object-cover " style={{ width: "500px", height: "280px" }} alt="progetto" src={image} />
+                <Image className="object-cover " width={500} height={280} alt="progetto" src={image} />
                 {github ? <Link  href={github} ><a target="blank"><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">
                     <VscGithub size={28} />
                 </div></a></Link>: ""}
@@ -70,5 +73,14 @@ const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAziend
                 </div>
             </div>
         </div>
+    );
+}
+
+
+const HasLink = (props) =>{
+    return(
+        <Link href={props.link}><a>
+            {props.children}
+        </a></Link>
     );
 }

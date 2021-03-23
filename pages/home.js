@@ -16,7 +16,6 @@ export default function Home() {
 
     const age = calculateAge(birthday);
 
-    //dummy data
     return (
       <div className="page flex flex-col min-h-screen">
         <Head
@@ -131,7 +130,7 @@ export default function Home() {
                 </div>
 
                 <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
-                  <Section title="Librerie Frameworks" skills={skills.frameworks}  />
+                  <Section title="Librerie e Frameworks" skills={skills.frameworks}  />
                 </div>
 
                 <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
