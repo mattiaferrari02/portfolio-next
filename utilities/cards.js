@@ -127,7 +127,7 @@ const cards = [
         name: "Coffee Counter",
         image: "https://i.imgur.com/sWjwmY9.png",
         anno: "Personale",
-        pillColor: "#99681d",
+        pillColor: "#ab7024",
         github: "https://github.com/IlSassone/coffee-counter",
         cardDesc: "La benzina del programmatore è il caffè, ed ecco qui una semplice web app che conta quanti caffè ho bevuto.",
         date: "2021-04-30",

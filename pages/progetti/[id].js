@@ -22,7 +22,7 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
             <main className="text-gray-200 md:flex px-2 mt-20 flex-grow">
                 <article className=" w-full ">
                     <header className="text-gray-300 mx-2 md:mx-20 text-3xl my-4">
-                        <Image className="object-cover rounded-xl" width={1920} height={280} alt="progetto" src={banner}/>
+                        <img className="object-cover rounded-xl" width={1920} height={280} alt="progetto" src={banner}/>
                         <time dateTime={date} ></time>
                     </header>
                     <main className="mx-2 md:mx-20 mb-10">

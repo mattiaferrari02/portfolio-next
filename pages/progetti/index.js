@@ -8,7 +8,6 @@ import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
 import { VscGithub} from "react-icons/vsc"
 import { HiOutlineGlobeAlt} from "react-icons/hi"
-import Image from 'next/image'
 
 export default function Home() {
     return (
@@ -53,7 +52,7 @@ const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAziend
     return (
         <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
             <div className="relative">
-                <Image className="object-cover " width={500} height={280} alt="progetto" src={image} />
+                <img className="object-cover " width={500} height={280} alt="progetto" src={image} />
                 {github ? <Link  href={github} ><a target="blank"><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">
                     <VscGithub size={28} />
                 </div></a></Link>: ""}
