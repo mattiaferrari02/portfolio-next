@@ -9,7 +9,7 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 
 
-export default function Home({card: {keywords, cardDesc, name, date, image, banner, icon, fullDesc}}) {
+export default function Home({card: {keywords, cardDesc, name, date, image, banner, icon, fullDesc, conclusioni, materiali}}) {
     return (
         <div className="page flex flex-col min-h-screen">
             <Head
@@ -34,10 +34,21 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
                                 {fullDesc}
                             </div>
                             <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
-                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">{icon}</span> {name}</h2>
+                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">{icon}</span> Conclusioni</h2>
                             </div>
                             <div className="text-xl">
-                                {fullDesc}
+                                {conclusioni}
+                            </div>
+                            <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
+                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">🔍</span> Materiali</h2>
+                            </div>
+                            <div className="flex flex-row flex-wrap text-xl justify-center">
+                                {
+                                    materiali.map(({link, text}) =>{
+                                        return <a className="text-center mr-2 mb-2 px-12 py-2 border border-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-50"
+                                        href={link} target="blank"> {text} </a>
+                                    })
+                                }
                             </div>
                         </div>
                     </main>

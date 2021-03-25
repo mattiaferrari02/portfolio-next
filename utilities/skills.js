@@ -23,7 +23,7 @@ const languages = [
         {
             name: "TypeScript",
             color: "#0076C6",
-            skill: "90%"
+            skill: "60%"
         },
         {
             name: "Dart",

@@ -13,6 +13,13 @@ const cards = [
         hasPage: true,
         icon: "🎨",
         fullDesc: "La nostra prima attività di PCTO è stata con Tiwi e a primo impatto sembrava davvero difficile: tiwi è un azienda che lavora molto nell'ambito grafico e non penso di essere molto in quel tipo di cose, ma poi il rappresentante dell'azienda ci ha spiegato l'attività. Non era nulla riguardo allo scrivere codice, ma bensì dovevamo creare una presentazione, un video accattivante per convincere un potenziale datore di lavoro a finanziare il nostro fanta-progetto. Per facilitarci il lavoro ci è stato chiesto di utilizzare progetti o serivizi già esistenti, come per esempio: Spotify, Uber Eats o Tik Tok. Il nostro gruppo ha scelto Amazon Prime, e abbiamo creato un piccolo video animato per mostrarne i punti di forza.",
+        conclusioni: "É stata un'attività molto stimolante e diversa dal solito, abbiamo imparato a realizzare dei piccoli video utilizzando uno strumento chiamato powtoon, nonostante tutto è stato abbastanza complesso.",
+        materiali: [
+            {
+                link: "https://youtu.be/o4QOe3uuxe4",
+                text: "Video",
+            },
+        ]
     },
     {
         id: "2",
@@ -24,7 +31,17 @@ const cards = [
         date: "2019-01-10",
         linkAzienda: "https://katanaca.com/",
         hasPage: true,
-
+        keywords: "KatanaCa', Reggio Emilia",
+        banner: "https://i.imgur.com/tgXpyI2.png",
+        icon: "🏠",
+        fullDesc: "",
+        conclusioni: "É stata un'attività molto stimolante e diversa dal solito, abbiamo imparato a realizzare dei piccoli video utilizzando uno strumento chiamato powtoon, nonostante tutto è stato abbastanza complesso.",
+        materiali: [
+            {
+                link: "https://youtu.be/o4QOe3uuxe4",
+                text: "Video",
+            },
+        ]
     },
     {
         id: "3",
