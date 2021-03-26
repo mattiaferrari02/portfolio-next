@@ -38,8 +38,8 @@ const cards = [
         conclusioni: "Io e il nostro gruppo abbiamo realizzato un sito di demo che implementa una base di javascript, imparato ad utilizzare per l'occasione, ma il tour guidato mancava di ogni altro tipo di funzionalità per mancanza di conoscenze. Putroppo l'attività non è stata molto bella e inizialmente l'obiettivo dell'attività non era ben chiaro.",
         materiali: [
             {
-                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
-                text: "Sitino", 
+                link: "https://storage-portfolio.netlify.app/sito_katanaca/katanaca.html",
+                text: "Sito Demo", 
             },
         ]
     },
@@ -60,7 +60,7 @@ const cards = [
         conclusioni: "Abbiamo creato una presentazione per utilizzare i dati raccolti e per fare una divulgazione, abbiamo scelto che la divulgazione sarebbe avvenuta tramite Instagram. L'attività è stata interessante.",
         materiali: [
             {
-                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
+                link: "https://storage-portfolio.netlify.app/INCIDENTI%20STRADALI.pdf",
                 text: "Presentazione",
             },
         ]
@@ -78,12 +78,12 @@ const cards = [
         keywords: "Webranking, Reggio Emilia",
         banner: "https://i.imgur.com/C3xZbSF.png",
         icon: "💿",
-        fullDesc: "Energy Way è un'azienda che si occupa di data analysis, situata a Modena. La loro richiesta è stata stimolante: dovevamo cercare utilizzare i dati del sito del comune di Reggio Emilia per creare grafici relativi. Noi abbiamo scelto di utilizzare i dati relativi agli incidenti avvenuti nella provincia.",
-        conclusioni: "Abbiamo creato una presentazione per utilizzare i dati raccolti e per fare una divulgazione, abbiamo scelto che la divulgazione sarebbe avvenuta tramite Instagram. L'attività è stata interessante.",
+        fullDesc: "Webranking è un'azienda molto importante a livello internazionale, ha numerosi clienti conosciuti e si occupa di web development e Search Engine Optimization, quindi piazzamento del sito su google. L'attività che ci hanno proposto è stata la creazione di un e-commerce responsive. Al tempo non sapevamo utilizare alcun framework e non avevamo conoscenze Javascript, quindi è stato molto stimolante e impegnativo riuscire a soddisfare la loro richiesta.",
+        conclusioni: "Il sito che abbiamo prodotto è un e-commerce di abbigliamento, abbiamo utilizzato bootstrap per rendere il sito resposive e infine abbiamo utilizzato una libreria per la gestione client-side del carrello. Abbiamo esplorato un po' di Javascript e imparato le basi di bootstrap.",
         materiali: [
             {
-                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
-                text: "Presentazione",
+                link: "https://storage-portfolio.netlify.app/sito_webranking/home.html", 
+                text: "Sito Demo",
             },
         ]
     },
@@ -97,6 +97,17 @@ const cards = [
         date: "2019-01-21",
         linkAzienda: "https://errevi.com/",
         hasPage: true,
+        keywords: "Errevi System, Reggio Emilia",
+        banner: "https://i.imgur.com/cuaOKsJ.png",
+        icon: "🖥",
+        fullDesc: "descrizione errevi system",
+        conclusioni: "conclusione errevi system",
+        materiali: [
+            {
+                link: "https://storage-portfolio.netlify.app/errevi%20system/home.html",
+                text: "Sito Demo",
+            },
+        ]
     },
     {
         id: "6",
