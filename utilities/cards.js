@@ -34,12 +34,12 @@ const cards = [
         keywords: "KatanaCa', Reggio Emilia",
         banner: "https://i.imgur.com/tgXpyI2.png",
         icon: "🏠",
-        fullDesc: "",
-        conclusioni: "É stata un'attività molto stimolante e diversa dal solito, abbiamo imparato a realizzare dei piccoli video utilizzando uno strumento chiamato powtoon, nonostante tutto è stato abbastanza complesso.",
+        fullDesc: "KatanaCa' è un agenzia immobiliare 2.0 nata qui a Reggio Emilia, essendo una startup sono venuti a chiederci di creare uno stile alternativo per il loro sito e la loro guida interattiva. Le nostre conoscenze non erano sufficienti a creare un prodotto soddisfacente ma ci siamo impegnati, non sapevamo ancora utilizzare nemmeno javascript, ma ne abbiamo imparato le basi in poco tempo. Lo scopo dell'attività, oltre alla creazione di un nuovo stile era anche quello di trovare delle idee per migliorare la loro parte interattiva.",
+        conclusioni: "Io e il nostro gruppo abbiamo realizzato un sito di demo che implementa una base di javascript, imparato ad utilizzare per l'occasione, ma il tour guidato mancava di ogni altro tipo di funzionalità per mancanza di conoscenze. Putroppo l'attività non è stata molto bella e inizialmente l'obiettivo dell'attività non era ben chiaro.",
         materiali: [
             {
-                link: "https://youtu.be/o4QOe3uuxe4",
-                text: "Video",
+                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
+                text: "Sitino", 
             },
         ]
     },
@@ -53,6 +53,17 @@ const cards = [
         date: "2019-01-14",
         linkAzienda: "https://ammagamma.com/",
         hasPage: true,
+        keywords: "Energy Way, Modena",
+        banner: "https://i.imgur.com/kBlMjSY.png",
+        icon: "💿",
+        fullDesc: "Energy Way è un'azienda che si occupa di data analysis, situata a Modena. La loro richiesta è stata stimolante: dovevamo cercare utilizzare i dati del sito del comune di Reggio Emilia per creare grafici relativi. Noi abbiamo scelto di utilizzare i dati relativi agli incidenti avvenuti nella provincia.",
+        conclusioni: "Abbiamo creato una presentazione per utilizzare i dati raccolti e per fare una divulgazione, abbiamo scelto che la divulgazione sarebbe avvenuta tramite Instagram. L'attività è stata interessante.",
+        materiali: [
+            {
+                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
+                text: "Presentazione",
+            },
+        ]
     },
     {
         id: "4",
@@ -64,6 +75,17 @@ const cards = [
         date: "2019-01-17",
         linkAzienda: "https://webranking.it/",
         hasPage: true,
+        keywords: "Webranking, Reggio Emilia",
+        banner: "https://i.imgur.com/C3xZbSF.png",
+        icon: "💿",
+        fullDesc: "Energy Way è un'azienda che si occupa di data analysis, situata a Modena. La loro richiesta è stata stimolante: dovevamo cercare utilizzare i dati del sito del comune di Reggio Emilia per creare grafici relativi. Noi abbiamo scelto di utilizzare i dati relativi agli incidenti avvenuti nella provincia.",
+        conclusioni: "Abbiamo creato una presentazione per utilizzare i dati raccolti e per fare una divulgazione, abbiamo scelto che la divulgazione sarebbe avvenuta tramite Instagram. L'attività è stata interessante.",
+        materiali: [
+            {
+                link: "https://youtu.be/o4QOe3uuxe4", //TODO: modifica
+                text: "Presentazione",
+            },
+        ]
     },
     {
         id: "5",
