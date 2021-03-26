@@ -44,10 +44,10 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
                             </div>
                             <div className="flex flex-row flex-wrap text-xl justify-center">
                                 {
-                                    materiali.map(({link, text}) =>{
+                                    materiali? materiali.map(({link, text}) =>{
                                         return <a className="text-center mr-2 mb-2 px-12 py-2 border border-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-50"
                                         href={link} target="blank"> {text} </a>
-                                    })
+                                    }): ""
                                 }
                             </div>
                         </div>
