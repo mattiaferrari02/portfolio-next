@@ -99,9 +99,9 @@ const cards = [
         hasPage: true,
         keywords: "Errevi System, Reggio Emilia",
         banner: "https://i.imgur.com/cuaOKsJ.png",
-        icon: "🖥",
-        fullDesc: "descrizione errevi system",
-        conclusioni: "conclusione errevi system",
+        icon: "💻",
+        fullDesc: "Errevi System è un'azienda che si occupa di soluzioni aziendali in ambito informatico, si occupano di cybersecurity e di strutture di reti. L'attività che ci hanno proposto è stata bella e diversa rispetto le altre, ci hanno chiesto di utilizzare jQuery per ottenere dei dati da OpenWeatherMap, un API per il meteo.",
+        conclusioni: "A fine attività abbiamo prodotto un piccolo sito che riesce a fare una chiamata ajax. L'attività è stata interessante e ci ha permesso di fare pratica con javascript e jQuery, che non sapevamo ancora utilizzare.",
         materiali: [
             {
                 link: "https://storage-portfolio.netlify.app/errevi%20system/home.html",
@@ -118,6 +118,17 @@ const cards = [
         cardDesc: "Un progetto scolastico con l'obbiettivo di insegnare le basi di come si approccia l'hardware del computer.",
         date: "2019-03-02",
         hasPage: true,
+        keywords: "montasmonta, blaise pascal, Reggio Emilia",
+        banner: "https://i.imgur.com/o68Mc6X.png",
+        icon: "🔧",
+        fullDesc: "L'obiettivo del progetto era il disassemblaggio e l'assemblaggio di un computer. L'attività si è svolta in una prima parte in cui ci hanno parlato della storia dei computer a grandi linee, e successivamente l'attività vera e propria.",
+        conclusioni: "L'attività è stata interessante, considerando che prima d'ora non avevo mai smontato un computer.",
+        materiali: [
+            {
+                link: "https://storage-portfolio.netlify.app/Relazione%20montasmonta.pdf",
+                text: "Relazione progetto",
+            },
+        ]
     },
     {
         id: "7",
