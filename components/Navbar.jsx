@@ -53,8 +53,8 @@ export default function Navbar(){
                             </div>
                                 </span>
                             <div className={classi+" origin-top-right absolute right-0 mt-1 w-56 rounded-lg shadow-lg bg-gray-700 ring-1 ring-gray-900 ring-opacity-5 focus:outline-none"} role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                <div className="py-1" role="none">
-                                <a href="#sex" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</a>
+                                <div className="py-1">
+                                <a href="/progetti/201819" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2019/2020</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">2020/2021</a>
                                 <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">Orientamento</a>
