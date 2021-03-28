@@ -4,10 +4,15 @@ import Navbar from '../components/Navbar';
 import Link from 'next/link';
 import * as skills from "../utilities/skills";
 import Section from "../components/section";
+import AOS from "aos";
+import React, { useEffect } from 'react'
+
 
 export default function Home() {
     const birthday = new Date('2002-06-22');
-
+    useEffect(()=>{
+      AOS.init();
+    });
     const calculateAge = (birthday) => {
       let difference = Date.now() - birthday.getTime();
       let date = new Date(difference);
@@ -27,9 +32,9 @@ export default function Home() {
         />
 
         <Navbar />
-          <main>
+        <main id="aboutme">
         <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 mt-20 flex-grow">
-          <article id="aboutme" className=" w-full ">
+          <article  className=" w-full ">
             
             <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 my-4">
                   <h2><span role="img" aria-label="coffee">☕</span> About Me</h2>
@@ -118,22 +123,22 @@ export default function Home() {
             </main>
           </article>
         </section>
-        <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
+          <section data-aos="fade-up" className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
           <article id="skills" className="w-full">
             <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-4">
               <h2><span role="img" aria-label="coffee">🚊</span> Cosa so fare</h2>
               <time dateTime="2021-03-18" ></time>
             </header>
             <main>
-                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
                   <Section title="Programmazione e Markup" skills={skills.languages} />
                 </div>
 
-                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                   <Section title="Librerie e Frameworks" skills={skills.frameworks}  />
                 </div>
 
-                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                 <Section title="Strumenti e Servizi" skills={skills.tools} />
                 </div>
             </main>

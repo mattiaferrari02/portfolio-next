@@ -10,6 +10,7 @@ export default function Heading({description, keywords, title}){
                 name="description"
                 content={description}
             />
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
             <meta
                 name="keywords"
                 content={keywords}

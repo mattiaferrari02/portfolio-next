@@ -31,7 +31,7 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
                                 <h2 className=""><span role="img" aria-label="iconcina_del_progetto">📓</span> Descrizione</h2>
                             </div>
                             <div className="text-xl">
-                                {fullDesc}
+                                <p>{fullDesc}</p>
                             </div>
                             <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
                                 <h2 className=""><span role="img" aria-label="iconcina_del_progetto">{icon}</span> Conclusioni</h2>
@@ -39,17 +39,20 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
                             <div className="text-xl">
                                 {conclusioni}
                             </div>
-                            <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
-                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">🔍</span> Materiali</h2>
-                            </div>
-                            <div className="flex flex-row flex-wrap text-xl justify-center">
-                                {
-                                    materiali? materiali.map(({link, text}) =>{
-                                        return <a className="text-center mr-2 mb-2 px-12 py-2 border border-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-50"
-                                        href={link} target="blank"> {text} </a>
-                                    }): ""
-                                }
-                            </div>
+                            {materiali ? <>
+                                <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
+                                    <h2 className=""><span role="img" aria-label="iconcina_del_progetto">🔍</span> Materiali</h2>
+                                </div>
+                                <div className="flex flex-row flex-wrap text-xl justify-center">
+                                    {
+                                        materiali ? materiali.map(({ link, text }) => {
+                                            return <a className="text-center mr-2 mb-2 px-12 py-2 border border-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-50"
+                                                href={link} target="blank"> {text} </a>
+                                        }) : ""
+                                    }
+                                </div>
+                            </>: ""}
+                            
                         </div>
                     </main>
                 </article>

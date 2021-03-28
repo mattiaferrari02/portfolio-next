@@ -8,8 +8,15 @@ import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
 import { VscGithub} from "react-icons/vsc"
 import { HiOutlineGlobeAlt} from "react-icons/hi"
+import AOS from "aos";
 
 export default function Home() {
+
+    useEffect(() => {
+        AOS.init();
+    });
+
+
     return (
         <div className="page flex flex-col min-h-screen">
             <Head
@@ -50,7 +57,7 @@ export default function Home() {
 const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAzienda}}) => {
     console.log(github);
     return (
-        <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
+        <div data-aos="fade-up" className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
             <div className="relative">
                 <img className="object-cover " width={500} height={280} alt="progetto" src={image} />
                 {github ? <Link  href={github} ><a target="blank"><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">

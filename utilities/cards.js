@@ -54,7 +54,7 @@ const cards = [
         linkAzienda: "https://ammagamma.com/",
         hasPage: true,
         keywords: "Energy Way, Modena",
-        banner: "https://i.imgur.com/kBlMjSY.png",
+        banner: "https://i.imgur.com/cxSu6Mq.png",
         icon: "💿",
         fullDesc: "Energy Way è un'azienda che si occupa di data analysis, situata a Modena. La loro richiesta è stata stimolante: dovevamo cercare utilizzare i dati del sito del comune di Reggio Emilia per creare grafici relativi. Noi abbiamo scelto di utilizzare i dati relativi agli incidenti avvenuti nella provincia.",
         conclusioni: "Abbiamo creato una presentazione per utilizzare i dati raccolti e per fare una divulgazione, abbiamo scelto che la divulgazione sarebbe avvenuta tramite Instagram. L'attività è stata interessante.",
@@ -139,6 +139,17 @@ const cards = [
         cardDesc: "Un progetto scolastico che consiste nell'insegnare le basi della programmazione ai ragazzini di una scuola media locale.",
         date: "2019-04-17",
         hasPage: true,
+        keywords: "info.html, scuole medie leonardo da vinci, scratch c++, blaise pascal, Reggio Emilia",
+        banner: "https://i.imgur.com/2y8NGp4.png",
+        icon: "👩‍💻",
+        fullDesc: "Con questo progetto noi studenti delle superiori siamo andati a spiegare le basi di programmazione ad alcuni ragazzini di seconda media, abbiamo svolto varie lezioni, le prime su scratch e le altre su c++.",
+        conclusioni: "É stato bello andare ad insegnare a qualcuno più piccolo di noi, e dover insegnare si è rivelato più difficile del previsto, penso di aver imparato molto ed è stato utile.",
+        materiali: [
+            {
+                link: "https://storage-portfolio.netlify.app/leo.pdf",
+                text: "Ecco una lezione",
+            },
+        ]
     },
     {
         id: "8",
@@ -150,6 +161,11 @@ const cards = [
         date: "2020-05-18",
         linkAzienda: "https://www.cnare.it/",
         hasPage: true,
+        keywords: "cna, blaise pascal, Reggio Emilia",
+        banner: "https://i.imgur.com/k2VcPYp.png",
+        icon: "🏭",
+        fullDesc: "Abbiamo fatto più lezioni concluse da una verifica finale su quanto appreso durante le lezioni. Le lezioni hanno trattato di argomenti inerenti al mondo aziendale tra cui: 'Redazione di un curriculum', 'Colloquio di lavoro' oppure 'Startup'",
+        conclusioni: "L'attività è stata molto interessante e ci ha aiutato a capire il funzionamento del mondo del lavoro. Putroppo è stata l'unica attività per quell'anno",
     },
     {
         id: "9",
@@ -172,6 +188,17 @@ const cards = [
         date: "2020-11-27",
         linkAzienda: "https://www.unicode.it/",
         hasPage: true,
+        keywords: "info.html, scuole medie leonardo da vinci, scratch c++, blaise pascal, Reggio Emilia",
+        banner: "https://i.imgur.com/ytn83nX.png",
+        icon: "🈁",
+        fullDesc: "Unicode è una azienda molto importante che lavora in ambito Microsoft qui a Reggio Emilia, ci hanno presentato 3 progetti e ci hanno chiesto di sceglierne uno proponendo delle soluzioni e facendo ipotesi sulla realizzazione del progetto",
+        conclusioni: "Noi abbiamo scelto il progetto 3 \"comandi gestuali\" e abbiamo svolto ricerche e preparato una presentazione con la nostra soluzione. L'esperienza fatta non mi ha entusiasmato molto",
+        materiali: [
+            {
+                link: "https://storage-portfolio.netlify.app/progetto3.pdf",
+                text: "presentazione sul progetto",
+            },
+        ]
     },
     {
         id: "11",
@@ -182,6 +209,29 @@ const cards = [
         cardDesc: "Le numerose attività di orientamento che abbiamo fatto quest'anno.",
         date: "2021-04-30",
         hasPage: true,
+        keywords: "info.html, scuole medie leonardo da vinci, scratch c++, blaise pascal, Reggio Emilia",
+        banner: "https://i.imgur.com/bw2tIhT.png",
+        icon: "🧭",
+        fullDesc: "Elettric80 è venuta a mostrarci il funzionamento della loro azienda. Per i percorsi di studi sono venuti da noi UNIMORE e ITS MAKER; e per l agevolazioni è venuto ER.GO",
+        conclusioni: "É stato molto interessante e utile ascoltare le diverse università, enti e aziende, anche se avevo già un'idea di cosa avrei voluto fare in futuro.",
+        materiali: [
+            {
+                link: "https://www.unimore.it/",
+                text: "unimore",
+            },
+            {
+                link: "https://itsmaker.it/",
+                text: "its maker",
+            },
+            {
+                link: "https://www.elettric80.com/it/",
+                text: "elettric80",
+            },
+            {
+                link: "https://www.er-go.it/",
+                text: "er.go",
+            },
+        ]
     },
     {
         id: "12",

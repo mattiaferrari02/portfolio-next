@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
+    "aos": "^2.3.4",
     "dotenv": "^8.2.0",
     "mongodb": "^3.6.5",
     "next": "10.0.5",
