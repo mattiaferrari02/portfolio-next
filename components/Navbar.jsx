@@ -42,7 +42,7 @@ export default function Navbar(){
                             
                         </li>
                         <li>
-                            <Link href="#footer"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 "><span role="img" aria-label="book">📕</span> Contattami</span></Link>
+                            <Link href="/home#contactme"><span className="pointer rounded-full py-3 px-3 hover:bg-red-400 "><span role="img" aria-label="book">📕</span> Contattami</span></Link>
                         </li>
                     </ul>
                 </div>

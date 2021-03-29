@@ -17,7 +17,7 @@ const Contact = (props) => {
   const [status, setStatus] = useState(Status.Submit);
 
   return (
-    <form className={props.className} netlify>
+    <form id="contactme" className={props.className}>
       <input
         className="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10 mb-4"
         type="text"
@@ -34,7 +34,31 @@ const Contact = (props) => {
       {status == Status.Submit && (
         <button
           className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          onClick={async function (event) {
+            event.preventDefault();
 
+            if (contact == null || message == null) {
+              setStatus(Status.Warning);
+
+              return window.setTimeout(() => setStatus(Status.Submit), 3000);
+            }
+
+            const request = await fetch("/api/email", {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                contactEmail: contact,
+                emailText: message,
+              }),
+            });
+
+            setStatus(request.status == 200 ? Status.Success : Status.Error);
+
+            return window.setTimeout(() => setStatus(Status.Submit), 7000);
+          }}
         >
           Submit your request &nbsp;📱
         </button>
