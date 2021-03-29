@@ -1,12 +1,8 @@
 import Head from '../../components/Head'
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
-import Link from 'next/link';
-import * as skills from "../../utilities/skills";
-import Section from "../../components/section";
-import cards from "../../utilities/cards"
 import React, { useEffect } from 'react'
-import Image from 'next/image'
+import { getData } from "../api/data"
 
 
 export default function Home({card: {keywords, cardDesc, name, date, image, banner, icon, fullDesc, conclusioni, materiali}}) {
@@ -86,7 +82,7 @@ export async function getStaticPaths() {
     // Call an external API endpoint to get posts
     /*const res = await fetch('https://.../posts')
     const posts = await res.json()*/
-
+    const cards = await getData();
     // Get the paths we want to pre-render based on posts
     const paths = cards.map((card) => ({
         params: { id: card.id },
@@ -103,6 +99,8 @@ export async function getStaticProps({ params }) {
     // If the route is like /posts/1, then params.id is 1
     /*const res = await fetch(`https://.../posts/${params.id}`)
     const post = await res.json()*/
+
+    const cards = await getData();
 
         for(let i = 0; i<cards.length; i++){
             if (params.id == cards[i].id) return { props: { card: cards[i] } }
