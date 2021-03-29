@@ -3,32 +3,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaChevronCircleDown } from "react-icons/fa";
 
 export default function Navbar(){
-    const [classi, setClassi] = useState("hidden transform opacity-0 scale-95 transition ease-out duration-100");
+    const [open, setOpen] = useState(false);
     const drop = useRef();
-    const change = () =>{
-        setClassi(
-          classi ==
-            "hidden transition ease-in duration-75 transform opacity-0 scale-95"
-            ? "transition ease-out duration-100 transform opacity-100 scale-100"
-            : "hidden transition ease-in duration-75 transform opacity-0 scale-95"
-        );
-    }
-    const handleClick = e => {
-    if (drop.current.contains(e.target)) {
-        // inside click
-        return;
-    }
-    // outside click 
-    setClassi("hidden transition ease-in duration-75 transform opacity-0 scale-95")
-    };
-    useEffect(() => {
-      // add when mounted
-      document.addEventListener("mousedown", handleClick);
-      // return function to be called when unmounted
-      return () => {
-        document.removeEventListener("mousedown", handleClick);
-      };
-    }, []);
+    
+    
 
     return(
         <header className="fixed w-full z-50 shadow-md bg-red-600 ">
@@ -47,20 +25,20 @@ export default function Navbar(){
                         <li className="relative">
                             <span className="pointer rounded-full p-3 hover:bg-red-400 " aria-expanded="true" aria-haspopup="true"
                                 ><div className="inline-flex">&nbsp;<Link href="/progetti"><div><span role="img" aria-label="cartellon">🚧</span>&nbsp; Attività e Progetti&nbsp;</div></Link> <div className="p-1" ><FaChevronCircleDown /></div>  </div>
-                                <div onClick={change}
-                                ref={drop} className="pointer z-50 absolute right-1 w-10 h-10" style={{top: "-5px", bottom: "0px"}}>
-
-                            </div>
+                                <div onClick={()=>{setOpen(!open)}} ref={drop} className="pointer z-50 absolute right-1 w-11 h-11 " style={{top: "-10px", bottom: "0px"}}></div>
                                 </span>
-                            <div className={classi+" origin-top-right absolute right-0 mt-1 w-56 rounded-lg shadow-lg bg-gray-700 ring-1 ring-gray-900 ring-opacity-5 focus:outline-none"} role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            {open ? <div id="droppino" className={"pointer origin-top-right absolute right-0 mt-1 w-56 rounded-lg shadow-lg bg-gray-700 ring-1 ring-gray-900 ring-opacity-5 focus:outline-none"} role="menu" aria-orientation="vertical" aria-labelledby="options-menu"
+                                
+                                >
                                 <div className="py-1">
-                                <a href="/progetti/201819" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2019/2020</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">2020/2021</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">Orientamento</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 " role="menuitem">Personali</a>
+                                <Link href="/progetti/201819"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</span></Link>
+                                <Link href="/progetti/201920"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2019/2020</span></Link>
+                                <Link href="/progetti/201920"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2020/2021</span></Link>
+                                <Link href="/progetti/orientamento"><span  className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">Orientamento</span></Link>
+                                <Link href="/progetti/personali"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">Personali</span></Link>
                                 </div>
-                            </div>
+                            </div>: ""}
+                            
                             
                         </li>
                         <li>

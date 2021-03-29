@@ -35,7 +35,7 @@ export default function Progetti({cards}) {
                         
                         {
                             cards.map((o, i) => {
-                                if (o.hasPage) return <HasLink link={`./progetti/${o.id}`}  key={i}> <Card data={o} key={i} /></HasLink>
+                                if (o.hasPage) return <HasLink link={`/progetti/${o.id}`}  key={i}> <Card data={o} key={i} /></HasLink>
                                 else return <HasLink link={o.github}> <Card data={o} key={i} /></HasLink>
                             })
                         }
