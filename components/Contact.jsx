@@ -60,7 +60,7 @@ const Contact = (props) => {
             return window.setTimeout(() => setStatus(Status.Submit), 7000);
           }}
         >
-          Submit your request &nbsp;📱
+          Invia &nbsp;📨
         </button>
       )}
 
@@ -69,7 +69,7 @@ const Contact = (props) => {
           className="xs:w-full sm:w-64 shadow bg-green-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
           onClick={(event) => event.preventDefault()}
         >
-          Message sent! &nbsp;✔
+          Message inviato! &nbsp;✔
         </button>
       )}
 
@@ -78,7 +78,7 @@ const Contact = (props) => {
           className="xs:w-full sm:w-64 shadow bg-red-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
           onClick={(event) => event.preventDefault()}
         >
-          Try again later... &nbsp;❌
+          Riprova &nbsp;❌
         </button>
       )}
 
@@ -87,7 +87,7 @@ const Contact = (props) => {
           className="xs:w-full sm:w-64 shadow bg-yellow-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
           onClick={(event) => event.preventDefault()}
         >
-          Fill in all the information &nbsp;⚠️
+          Inserisci tutte le informazioni&nbsp;⚠️
         </button>
       )}
     </form>
