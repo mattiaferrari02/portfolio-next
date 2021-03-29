@@ -6,6 +6,7 @@ import * as skills from "../utilities/skills";
 import Section from "../components/section";
 import AOS from "aos";
 import React, { useEffect } from 'react'
+import Contact from '../components/Contact';
 
 
 export default function Home() {
@@ -147,6 +148,20 @@ export default function Home() {
             </main>
           </article>
         </section>
+
+          <section data-aos="fade-up" className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
+            <article id="skills" className="w-full">
+              <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-4">
+                <h2><span role="img" aria-label="coffee">📧</span> Contattami</h2>
+                <time dateTime="2021-03-18" ></time>
+              </header>
+              <main>
+                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                  <Contact className="mt-3 text-lg" />
+                </div>
+              </main>
+            </article>
+          </section>
         </main>
         <Footer />
       </div>

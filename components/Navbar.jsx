@@ -33,7 +33,7 @@ export default function Navbar(){
                                 <div className="py-1">
                                 <Link href="/progetti/201819"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2018/2019</span></Link>
                                 <Link href="/progetti/201920"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2019/2020</span></Link>
-                                <Link href="/progetti/201920"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2020/2021</span></Link>
+                                <Link href="/progetti/202021"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">2020/2021</span></Link>
                                 <Link href="/progetti/orientamento"><span  className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">Orientamento</span></Link>
                                 <Link href="/progetti/personali"><span className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800" role="menuitem">Personali</span></Link>
                                 </div>
