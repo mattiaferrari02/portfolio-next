@@ -26,7 +26,9 @@ const Toaster = () =>{
                     <p className="break-words text-base" >
                         Ho creato questo sito per parlare di ciò che ho fatto a scuola, andando dai progetti fino al PCTO sin dall'inizio. <br />
                         Alcuni dei progetti probabilmente non sono belli o ben fatti ma questo è il mio punto di partenza.<br />
-                        Questo Portfolio è stato creato utilizzando la maggior parte delle mie conoscenze da web developer essendo un vero e proprio sito full-stack
+                        Questo Portfolio è stato creato utilizzando la maggior parte delle mie conoscenze da web developer essendo un vero e proprio sito full-stack<br />
+                        Nello specifico ho utilizzato Next.js e React.js per realizzare la parte client e server. Ho utilizzato MongoDb per mantenere le informazioni dei progetti. <br />
+                        Ho utilizzato Tailwind per creare lo stile delle pagine e netlify per hostare il sito.
                     </p>
                 </div>
                 <div>
