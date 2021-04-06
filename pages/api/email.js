@@ -4,21 +4,17 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 var transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com", // hostname
-    secureConnection: false, // TLS requires secureConnection to be false
-    port: 587, // port for secure SMTP
-    tls: {
-        ciphers: 'SSLv3'
-    },
+    service: "gmail",
     auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD
+        user: process.env.EMAIL_TO,
+        pass: process.env.PASSWORD,
     }
 });
 
 export default async (req, res) => {
+    console.log(req.body);
     var mailOptions = {
-        from: process.env.EMAIL,
+        from: process.env.EMAIL_TO,
         to: process.env.EMAIL_TO,
         subject: `Proposta da ${req.body.contactEmail}`,
         html: req.body.emailText,
