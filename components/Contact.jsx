@@ -20,7 +20,7 @@ const Contact = (props) => {
   const sendForm = async (e) =>{
     e.preventDefault();
     console.log(contact, message);
-    if (contact == null || message == null) {
+    if (contact == null || message == null || contact=="" || contact=="") {
       setStatus(Status.Warning);
       return window.setTimeout(() => setStatus(Status.Submit), 1500);
     }
@@ -42,7 +42,10 @@ const Contact = (props) => {
       .catch(() => {
         setStatus(Status.Error);
       })
-      .finally(()=>{setDisable(false)});
+      .finally(()=>{
+        setContact("");
+        setMessage("");
+        setDisable(false)});
 
     return setTimeout(()=> {setStatus(Status.Submit)}, 2000)
     
@@ -70,9 +73,8 @@ const Contact = (props) => {
 
       {status == Status.Submit && (
         <button
-          className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5 text-gray-50"
           onClick={sendForm}
-          
         >
           Invia &nbsp;📨
         </button>
@@ -80,7 +82,7 @@ const Contact = (props) => {
 
       {status == Status.Success && (
         <button
-          className="xs:w-full sm:w-64 shadow bg-green-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          className="xs:w-full sm:w-64 shadow bg-green-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5 text-gray-50"
           onClick={(event) => event.preventDefault()}
           disabled={disable}
         >
@@ -90,7 +92,7 @@ const Contact = (props) => {
 
       {status == Status.Error && (
         <button
-          className="xs:w-full sm:w-64 shadow bg-red-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          className="xs:w-full sm:w-64 shadow bg-red-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5 text-gray-50"
           onClick={(event) => event.preventDefault()}
         >
           Riprova &nbsp;❌
@@ -99,7 +101,7 @@ const Contact = (props) => {
 
       {status == Status.Warning && (
         <button
-          className="xs:w-full sm:w-64 shadow bg-yellow-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          className="xs:w-full sm:w-64 shadow bg-yellow-500 text-white py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5 text-gray-50"
           onClick={(event) => event.preventDefault()}
         >
           Inserisci tutte le informazioni&nbsp;⚠️
