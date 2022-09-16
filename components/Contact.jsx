@@ -19,7 +19,6 @@ const Contact = (props) => {
 
   const sendForm = async (e) =>{
     e.preventDefault();
-    console.log(contact, message);
     if (contact == null || message == null || contact=="" || contact=="") {
       setStatus(Status.Warning);
       return window.setTimeout(() => setStatus(Status.Submit), 1500);

@@ -3,7 +3,6 @@ import { VscGithub } from "react-icons/vsc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 
 const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAzienda}}) => {
-    console.log(github);
     return (
         <div data-aos="fade-up" className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
             <div className="relative">
