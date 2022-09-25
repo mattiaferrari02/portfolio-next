@@ -24,7 +24,7 @@ const Contact = (props) => {
       return window.setTimeout(() => setStatus(Status.Submit), 1500);
     }
     setDisable(true);
-    const request = await fetch("/api/email", {
+    fetch("/api/email", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -47,7 +47,7 @@ const Contact = (props) => {
         setDisable(false)});
 
     return setTimeout(()=> {setStatus(Status.Submit)}, 2000)
-    
+
   }
 
 

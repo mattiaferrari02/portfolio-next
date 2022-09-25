@@ -18,26 +18,26 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
             <main className="text-gray-200 md:flex px-2 mt-20 flex-grow">
                 <article className=" w-full ">
                     <header className="text-gray-300 mx-2 md:mx-20 text-3xl my-4">
-                        <img className="object-cover rounded-xl" width={1920} height={280} alt="progetto" src={banner}/>
+                        <img className="object-cover rounded-xl" width={1920} height={280} alt={`${name}_banner`} src={banner}/>
                         <time dateTime={date} ></time>
                     </header>
                     <main className="mx-2 md:mx-20 mb-10">
                         <div className="bg-gray-700 rounded-xl p-10">
                             <div className="text-gray-300 text-3xl border-b-2 border-gray-300 mb-4">
-                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">📓</span> Descrizione</h2>
+                                <h2 className=""><span role="img" aria-label="project_description_icon">📓</span> Descrizione</h2>
                             </div>
                             <div className="text-xl">
                                 <p>{fullDesc}</p>
                             </div>
                             <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
-                                <h2 className=""><span role="img" aria-label="iconcina_del_progetto">{icon}</span> Conclusioni</h2>
+                                <h2 className=""><span role="img" aria-label="project_conclusion_icon">{icon}</span> Conclusioni</h2>
                             </div>
                             <div className="text-xl">
                                 {conclusioni}
                             </div>
                             {materiali ? <>
                                 <div className="text-gray-300 text-3xl border-b-2 border-gray-300 my-4">
-                                    <h2 className=""><span role="img" aria-label="iconcina_del_progetto">🔍</span> Materiali</h2>
+                                    <h2 className=""><span role="img" aria-label="project_materials_icon">🔍</span> Materiali</h2>
                                 </div>
                                 <div className="flex flex-row flex-wrap text-xl justify-center">
                                     {
@@ -48,7 +48,7 @@ export default function Home({card: {keywords, cardDesc, name, date, image, bann
                                     }
                                 </div>
                             </>: ""}
-                            
+
                         </div>
                     </main>
                 </article>

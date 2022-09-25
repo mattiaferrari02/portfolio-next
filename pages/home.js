@@ -36,13 +36,13 @@ export default function Home() {
         <main id="aboutme">
         <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 mt-20 flex-grow">
           <article  className=" w-full ">
-            
+
             <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 my-4">
                   <h2><span role="img" aria-label="coffee">☕</span> About Me</h2>
                   <time dateTime="2021-03-18" ></time>
                 </header>
             <main className="grid  grid-col-1 grid-rows-9   sm:grid-cols-2 sm:grid-rows-3   lg:grid-cols-2 lg:grid-rows-3  xl:grid-cols-3  xl:grid-rows-3 grid-flow-row gap-3 mb-10">
-                
+
                 <div className="card text-2xl text-gray-200 p-10 col-span-1 row-span-1 bg-gray-700 rounded-xl overflow-hidden overflow-ellipsis">
                     Informazioni Personali<br />
                     Nome: <span className="text-xl"><span role="img" aria-label="Man">👨‍💼</span>  Mattia Ferrari </span> <br />
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
 
               <Link href="/progetti"><div className="pointer card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
-                    
+
                 <span role="img" aria-label="workinprogress">🚧</span>   Vai ai Progetti <span role="img" aria-label="workinprogress">➡</span>
                     <div className="block text-lg">
                       <p>In questa sezione troverai le informazioni riguardanti i progetti che ho fatto.</p>
@@ -97,12 +97,12 @@ export default function Home() {
                       </p>
                     </div>
                 </div>
-                
+
               <div className="card  text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl">
                     <div className="inline-block ">
                       <span role="img" aria-label="computer">💂‍♂️</span>Proper english user
                     </div>
-                    
+
                     <div className="block text-lg">
                       <p>
                         For a programmer is essential to know just the basics of English. <br />
@@ -111,7 +111,7 @@ export default function Home() {
                     </div>
                 </div>
               <div className="card text-3xl col-span-1 row-span-1 bg-gray-700 p-10 rounded-xl ">
-                    
+
                     <div className="inline-block">
                       🛬 Web developer
                     </div>
@@ -122,41 +122,41 @@ export default function Home() {
                       </p>
                     </div>
                 </div>
-                
-                
+
+
             </main>
           </article>
         </section>
-          <section data-aos="fade-up" className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
+          <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
           <article id="skills" className="w-full">
             <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-4">
               <h2><span role="img" aria-label="coffee">🚊</span> Cosa so fare</h2>
               <time dateTime="2021-03-18" ></time>
             </header>
             <main>
-                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
                   <Section title="Programmazione e Markup" skills={skills.languages} />
                 </div>
 
-                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                   <Section title="Librerie e Frameworks" skills={skills.frameworks}  />
                 </div>
 
-                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl mt-3">
                 <Section title="Strumenti e Servizi" skills={skills.tools} />
                 </div>
             </main>
           </article>
         </section>
 
-          <section data-aos="fade-up" className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
+          <section className="text-gray-300 md:flex px-2 md:px-10 lg:px-20 xl:px-30 flex-grow">
             <article id="skills" className="w-full">
               <header className="text-gray-300 md:col-span-2  text-3xl w-full border-b-2 border-gray-300 mb-4">
                 <h2><span role="img" aria-label="coffee">📧</span> Contattami</h2>
                 <time dateTime="2021-03-18" ></time>
               </header>
               <main>
-                <div data-aos="fade-up" className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
+                <div className="no-select card text-3xl w-full bg-gray-700 p-10 rounded-xl ">
                   <Contact className="mt-3 text-lg" />
                 </div>
               </main>

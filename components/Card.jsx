@@ -4,15 +4,15 @@ import { HiOutlineGlobeAlt } from "react-icons/hi";
 
 const Card = ({data: {image, name, cardDesc, anno, github, pillColor, linkAzienda}}) => {
     return (
-        <div data-aos="fade-up" className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
+        <div className="card col-span-1 row-span-1 bg-gray-700 rounded-xl shadow-lg w-full sm:w-1/2 md:w-full place-self-center h-full" style={{maxWidth: "500px"}}>
             <div className="relative">
-                <img className="object-cover " width={500} height={280} alt="progetto" src={image} />
-                {github ? <Link  href={github} ><a target="blank"><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">
-                    <VscGithub size={28} />
-                </div></a></Link>: ""}
-                {linkAzienda ? <Link href={linkAzienda} ><a target="blank"><div className="pointer absolute bottom-2 right-2 shadow-2xl hover:text-red-500 ">
-                    <HiOutlineGlobeAlt size={28} />
-                </div></a></Link> : ""}
+                <img className="object-cover " width={500} height={280} alt={`${name}_card_image`} src={image} />
+                {github ? <Link  href={github} ><div className="pointer absolute bottom-2 right-2 hover:text-red-500 ">
+                  <VscGithub size={28} />
+                </div></Link>: null}
+                {linkAzienda ? <Link href={linkAzienda}><div className="pointer absolute bottom-2 right-2 shadow-2xl hover:text-red-500">
+                  <HiOutlineGlobeAlt size={28} />
+                </div></Link> : null}
             </div>
             <div className="p-7 block text-lg">
                 <div className="text-2xl mb-2">
