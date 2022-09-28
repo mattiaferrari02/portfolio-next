@@ -202,7 +202,7 @@ const data = [
     ]
   },
   {
-    id: "orientamento",
+    id: "attivita_orientamento",
     anno: "orientamento",
     hasPage: true,
     keywords: "orientamento, istituto blaise pacal, reggio emilia",
